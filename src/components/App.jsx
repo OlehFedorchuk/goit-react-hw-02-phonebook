@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ContactList from '../components/ContactList/ContactList';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Filter from '../components/Filter/Filter';
+import 'components/App.css';
+
 
 class App extends Component {
   state = {
