@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 const ContactForm = ({ name, number, handleChange, handleSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
@@ -31,5 +31,14 @@ const ContactForm = ({ name, number, handleChange, handleSubmit }) => {
     </form>
   );
 };
+
+ContactForm.propTypes = {
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  
+}
+
 
 export default ContactForm;

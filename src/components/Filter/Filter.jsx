@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Filter = ({ value, onChange }) => {
   return (
     <label>
@@ -8,5 +7,6 @@ const Filter = ({ value, onChange }) => {
     </label>
   );
 };
+
 
 export default Filter;
